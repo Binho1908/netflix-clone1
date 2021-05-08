@@ -1,0 +1,165 @@
+:root{
+    --vermelho: #f50914;
+    --preto: #141414;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preto);
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+}
+header .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin: 10px 0 0 10px;
+}
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin: 10px 10px 0 0;
+}
+header nav a:hover{
+    color: #fff;
+}
+
+
+/*Filme Principal  (MAIN)  */
+
+.filme-principal{
+    font-size: 10px;
+    background: linear-gradient(rgba(0, 0, 2, .50), rgba(0,0,0,.50)100%),url(/img/a-silent-voice-logo.jpg);
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.titulo{
+    margin-top: 15%;
+
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+.botao{
+    background: rgba(0,0,0,0.50);
+    border: none;
+    color: white;
+    
+    padding: 15px;
+    margin-right: 15px;
+    
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all; 
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 50%;
+    margin-left: 20px;
+}
+.box-filme{
+    height: 300px;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
+h3{
+    margin: 20px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.buttonN {
+    position: fixed;
+    
+    margin-right: 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: none;
+    border-radius: 50%;
+
+    background-color: black;
+
+    font-weight: 900;
+    font-size: 24px;
+
+    right: 0;
+    width: 50px;
+    height: 50px;
+    bottom: 100px;
+    z-index: 444;
+
+    color: red;
+    
+    cursor: pointer;
+    transition: .05s ease-in-out;   
+}
+
+.buttonR {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: none;
+    border-radius: 50%;
+
+    background-color: #282936;
+
+    font-weight: 900;
+    font-size: 24px;
+
+    margin-right: 5px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    bottom: 160px;
+    z-index: 444;
+
+    color: #F47521;
+    
+    cursor: pointer;
+    transition: .05s ease-in-out;   
+}
+
+.buttonN:active, .buttonR:active {
+    background-color: white;
+}
+.buttonN:hover, .buttonR:hover {
+    transform: scale(1.1);
+}
